@@ -180,20 +180,21 @@
       <ol>
         <li><a href="#s1">Information We Collect</a></li>
         <li><a href="#s2">How We Use Your Information</a></li>
-        <li><a href="#s3">Payments, Subscriptions &amp; Escrow</a></li>
-        <li><a href="#s4">Third-Party Services We Use</a></li>
-        <li><a href="#s5">Account &amp; Data Deletion</a></li>
-        <li><a href="#s6">Reporting, Blocking &amp; Conduct</a></li>
-        <li><a href="#s7">Children's Privacy</a></li>
-        <li><a href="#s8">Data Security</a></li>
-        <li><a href="#s9">Your Rights</a></li>
-        <li><a href="#s10">Contact Us</a></li>
+        <li><a href="#s3">AI Event Assistant &amp; Smart Search</a></li>
+        <li><a href="#s4">Payments, Subscriptions &amp; Escrow</a></li>
+        <li><a href="#s5">Third-Party Services We Use</a></li>
+        <li><a href="#s6">Account &amp; Data Deletion</a></li>
+        <li><a href="#s7">Reporting, Blocking &amp; Conduct</a></li>
+        <li><a href="#s8">Children's Privacy</a></li>
+        <li><a href="#s9">Data Security</a></li>
+        <li><a href="#s10">Your Rights</a></li>
+        <li><a href="#s11">Contact Us</a></li>
       </ol>
     </div>
 
     <div class="content">
 
-      <p style="margin-top:26px;">Welcome to <strong>SKROLL</strong> ("the Platform", "we", "us", or "our") — an on-demand marketplace that connects clients ("Customers") with independent event professionals ("Service Providers" or "Vendors") such as photographers, DJs, caterers, and event planners.</p>
+      <p style="margin-top:26px;">Welcome to <strong>SKROLL</strong> ("the Platform", "we", "us", or "our") — an on-demand marketplace that connects clients ("Customers") with independent event professionals ("Service Providers" or "Service Providers") such as photographers, DJs, caterers, and event planners.</p>
       <p>This Privacy Policy explains, in plain language, what information we collect, why we collect it, how it is used, and what choices you have. By creating an account or using the SKROLL app, you agree to this policy.</p>
 
       <section id="s1">
@@ -201,16 +202,16 @@
 
         <h3>a) Information you give us</h3>
         <ul>
-          <li><strong>Account details:</strong> full name, email address, phone number, chosen role (Customer or Vendor), and profile picture.</li>
-          <li><strong>Vendor business details:</strong> business name, service category (Photography, DJ, Catering, Event Planning, etc.), portfolio images, package descriptions, and pricing.</li>
-          <li><strong>Bank details (Vendors only):</strong> bank account number, bank code, and account holder name — collected only to send your earnings, and verified/transferred securely through our payment partner, <strong>Paystack</strong>.</li>
-          <li><strong>Messages &amp; quotes:</strong> content of chats between customers and vendors, agreed quotes, and booking dates.</li>
+          <li><strong>Account details:</strong> full name, email address, phone number, chosen role (Customer or Service Provider), and profile picture.</li>
+          <li><strong>Service Provider business details:</strong> business name, service category (Photography, DJ, Catering, Event Planning, etc.), portfolio images, package descriptions, and pricing.</li>
+          <li><strong>Bank details (Service Providers only):</strong> bank account number, bank code, and account holder name — collected only to send your earnings, and verified/transferred securely through our payment partner, <strong>Paystack</strong>.</li>
+          <li><strong>Messages &amp; quotes:</strong> content of chats between customers and service providers, agreed quotes, and booking dates.</li>
           <li><strong>Reviews:</strong> star ratings and written reviews left after a completed booking.</li>
         </ul>
 
         <h3>b) Information collected automatically</h3>
         <ul>
-          <li><strong>Location:</strong> with your permission, we use your approximate or precise <em>foreground</em> location to show nearby vendors and calculate event distance. <span class="tag">We never track location in the background</span>.</li>
+          <li><strong>Location:</strong> with your permission, we use your approximate or precise <em>foreground</em> location to show nearby service providers and calculate event distance. <span class="tag">We never track location in the background</span>.</li>
           <li><strong>Push notification token (FCM):</strong> used only to deliver chat and booking alerts to your device.</li>
           <li><strong>Photos &amp; media:</strong> accessed only when you choose to upload a profile photo, portfolio image, or chat attachment. Files are stored securely via <strong>Cloudinary</strong>.</li>
         </ul>
@@ -221,16 +222,37 @@
       <section id="s2">
         <h2>2. How We Use Your Information</h2>
         <ul>
-          <li><strong>Marketplace matching:</strong> helping customers discover nearby vendors through search, map view, and browsing.</li>
+          <li><strong>Marketplace matching:</strong> helping customers discover nearby service providers through search, map view, and browsing.</li>
           <li><strong>Bookings &amp; escrow:</strong> managing quotes, availability, advance payments, and confirming service delivery.</li>
-          <li><strong>Payouts &amp; commission:</strong> calculating the 5% platform fee and releasing the vendor's net earnings (95%) to their verified bank account.</li>
+          <li><strong>Payouts &amp; commission:</strong> calculating the 5% platform fee and releasing the service provider's net earnings (95%) to their verified bank account.</li>
           <li><strong>Safety &amp; fraud prevention:</strong> reviewing user reports and enforcing our zero-tolerance policy against abuse.</li>
           <li><strong>Customer support:</strong> resolving issues and disputes via our support email.</li>
         </ul>
       </section>
 
       <section id="s3">
-        <h2>3. Payments, Subscriptions &amp; Escrow</h2>
+        <h2>3. AI Event Assistant &amp; Smart Search</h2>
+        <p>SKROLL includes an interactive <strong>AI Event Assistant</strong>, powered by Google Cloud / Firebase Cloud Functions (Gemini), that lets you describe what you need in plain language — for example: <em>"I need a wedding photographer and DJ in Sandton for 150 guests with a budget under R15,000."</em></p>
+
+        <h3>What the AI processes</h3>
+        <ul>
+          <li>The text of your search prompts, event dates, guest counts, requested service categories, and budget details.</li>
+          <li>This is used only to extract structured matching parameters — such as service type, location, and budget — so we can recommend relevant, verified service providers from our marketplace.</li>
+        </ul>
+
+        <h3>Data protection &amp; model training</h3>
+        <ul>
+          <li>Your AI chat prompts are processed in real time through secure, enterprise-grade Google Cloud functions, encrypted in transit.</li>
+          <li>Your prompts and conversations with the AI Assistant are <strong>never</strong> used to train public AI models.</li>
+          <li>Your AI search queries are <strong>never</strong> sold or shared with advertisers or data brokers.</li>
+        </ul>
+
+        <h3>Safety &amp; content moderation</h3>
+        <p>In line with Google Play's Generative AI policies, the AI Assistant runs under strict safety filters designed to prevent inappropriate, defamatory, or harmful responses. If you ever receive an unexpected or inappropriate AI response, you can flag it directly through our in-app reporting tool or by emailing <a href="mailto:m.mansuri@skroll.services">m.mansuri@skroll.services</a>.</p>
+      </section>
+
+      <section id="s4">
+        <h2>4. Payments, Subscriptions &amp; Escrow</h2>
         <p>SKROLL uses two separate, policy-compliant payment channels, depending on what is being paid for:</p>
 
         <table>
@@ -240,8 +262,8 @@
             <th>Payment method</th>
           </tr>
           <tr>
-            <td>Vendor subscription (unlocks live listing, portfolio, quotes)</td>
-            <td>Vendors only — Customers use the app for free</td>
+            <td>Service Provider subscription (unlocks live listing, portfolio, quotes)</td>
+            <td>Service Providers only — Customers use the app for free</td>
             <td>Google Play Billing (Android) / Apple StoreKit (iOS)</td>
           </tr>
           <tr>
@@ -250,31 +272,44 @@
             <td>Paystack (held in escrow until service is delivered)</td>
           </tr>
           <tr>
-            <td>Vendor payout (95% of booking value)</td>
-            <td>Paid to Vendor</td>
+            <td>Service Provider payout (95% of booking value)</td>
+            <td>Paid to Service Provider</td>
             <td>Paystack Transfer API, after service is confirmed complete</td>
           </tr>
         </table>
 
-        <h3>Cancellations &amp; refunds</h3>
-        <p>If a vendor cancels or fails to show up, the customer receives a <strong>100% full refund</strong> — SKROLL waives its platform fee and absorbs the gateway charge. Refunds are typically processed within <strong>3–7 business days</strong>.</p>
+        <h3>Service Provider subscription terms &amp; cancellation</h3>
+        <ul>
+          <li><strong>Auto-renewal:</strong> subscriptions bill on a recurring monthly cycle and renew automatically unless cancelled at least 24 hours before the current billing period ends.</li>
+          <li><strong>How to cancel:</strong>
+            <ul>
+              <li><strong>Android:</strong> Google Play Store → Profile icon → Payments &amp; subscriptions → Subscriptions → SKROLL → Cancel subscription.</li>
+              <li><strong>iOS:</strong> Settings → Apple ID → Subscriptions → SKROLL → Cancel Subscription.</li>
+            </ul>
+          </li>
+          <li><strong>Access after cancellation:</strong> service providers keep full listing and subscriber features until the end of the current paid billing cycle.</li>
+          <li><strong>Subscription refunds:</strong> billing and refund requests for the subscription itself are handled directly under Google Play's and Apple's own refund policies, not by SKROLL.</li>
+        </ul>
+
+        <h3>Booking cancellations &amp; escrow refunds</h3>
+        <p>If a service provider cancels or fails to show up for a booked event, the customer receives a <strong>100% full refund</strong> of their advance deposit — SKROLL waives its platform fee and absorbs the gateway charge. Refunds are typically processed within <strong>3–7 business days</strong> via Paystack.</p>
         <p>SKROLL does <strong>not</strong> store your full card number or banking password on our own servers.</p>
       </section>
 
-      <section id="s4">
-        <h2>4. Third-Party Services We Use</h2>
+      <section id="s5">
+        <h2>5. Third-Party Services We Use</h2>
         <p>We only share data with trusted, verified partners — never with advertisers or data brokers.</p>
         <ul>
           <li><strong>Google Firebase / Google Cloud</strong> — authentication and secure database storage.</li>
-          <li><strong>Paystack</strong> (PCI-DSS Level 1 certified) — payment processing, bank verification, and vendor payouts.</li>
+          <li><strong>Paystack</strong> (PCI-DSS Level 1 certified) — payment processing, bank verification, and service provider payouts.</li>
           <li><strong>Cloudinary</strong> — secure storage for profile photos, portfolios, and chat images.</li>
           <li><strong>Google Maps Platform</strong> — displaying map locations and calculating proximity.</li>
         </ul>
         <div class="callout">We do <strong>not</strong> sell, rent, or trade your personal data to any advertiser or third-party data broker.</div>
       </section>
 
-      <section id="s5">
-        <h2>5. Account &amp; Data Deletion</h2>
+      <section id="s6">
+        <h2>6. Account &amp; Data Deletion</h2>
         <p>You are always in control of your data:</p>
         <ul>
           <li><strong>In-app deletion:</strong> go to <strong>Settings → Delete Account</strong>, confirm your password, and your account is permanently deleted.</li>
@@ -283,8 +318,8 @@
         </ul>
       </section>
 
-      <section id="s6">
-        <h2>6. Reporting, Blocking &amp; User Conduct</h2>
+      <section id="s7">
+        <h2>7. Reporting, Blocking &amp; User Conduct</h2>
         <p>SKROLL has a zero-tolerance policy for harassment, fraud, and abusive behavior.</p>
         <ul>
           <li>Report any user, message, or profile with the in-app <strong>"Report User"</strong> button.</li>
@@ -294,23 +329,23 @@
         </ul>
       </section>
 
-      <section id="s7">
-        <h2>7. Children's Privacy</h2>
+      <section id="s8">
+        <h2>8. Children's Privacy</h2>
         <p>SKROLL is built for users <strong>aged 18 and older</strong> who can legally enter into service agreements. We do not knowingly collect information from anyone under 13 (or under 16 where local law requires). If we discover a minor's account, it is deleted immediately.</p>
       </section>
 
-      <section id="s8">
-        <h2>8. Data Security</h2>
+      <section id="s9">
+        <h2>9. Data Security</h2>
         <p>Your data is protected using industry-standard measures, including <strong>TLS/SSL encryption in transit</strong> and <strong>AES-256 encryption at rest</strong> via Google Cloud infrastructure.</p>
       </section>
 
-      <section id="s9">
-        <h2>9. Your Rights</h2>
+      <section id="s10">
+        <h2>10. Your Rights</h2>
         <p>Depending on your location (including under GDPR and similar laws), you may have the right to access, correct, export, or delete your personal data, and to object to certain uses of it. To exercise any of these rights, contact us using the details below.</p>
       </section>
 
-      <div class="contact-box" id="s10">
-        <h2>10. Contact Us</h2>
+      <div class="contact-box" id="s11">
+        <h2>11. Contact Us</h2>
         <p>Questions, concerns, or requests about this Privacy Policy or your data:</p>
         <p><strong>Email:</strong> <a href="mailto:m.mansuri@skroll.services">m.mansuri@skroll.services</a><br>
         <strong>In-app:</strong> Settings → Help &amp; Support → Contact Support</p>
